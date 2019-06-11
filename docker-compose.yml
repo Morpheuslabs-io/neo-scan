@@ -2,9 +2,9 @@ version: "3"
 services:
   neo-scan:
     image: slipoh/neo-scan
-    container_name: "neo-scan"
+    container_name: pfx-neo-scan
     ports:
-      - 4000:4000
+      - 43000:4000
     links:
       - postgresql:postgres
       - neo-privnet:20333
@@ -21,18 +21,18 @@ services:
   postgresql:
     image: postgres:10.1
     ports:
-      - 5432:5432
+      - 5432
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
   neo-privnet:
     image: cityofzion/neo-privatenet
-    container_name: "neo-privnet"
+    container_name: pfx-neo-privnet
     ports:
-      - 20333:20333
-      - 20334:20334
-      - 20335:20335
-      - 20336:20336
+      - 20333
+      - 20334
+      - 20335
+      - 20336
       - 30333:30333
       - 30334:30334
       - 30335:30335
