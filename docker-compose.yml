@@ -30,10 +30,4 @@ services:
     container_name: pfx-neo-privnet
     ports:
       - 20333:20333
-      - 20334
-      - 20335
-      - 20336
       - 30333:30333
-      - 30334
-      - 30335
-      - 30336
