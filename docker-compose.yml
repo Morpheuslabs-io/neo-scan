@@ -29,7 +29,7 @@ services:
     image: cityofzion/neo-privatenet
     container_name: pfx-neo-privnet
     ports:
-      - 20333
+      - 20333:20333
       - 20334
       - 20335
       - 20336
